@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infinity Unstick</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header class="header card">
+      <div class="header-text">
+        <h1>Infinity Unstick</h1>
+        <p class="subtitle">Fixes Disney Infinity 1.0 on iOS 10 by stopping obsolete SDKs from interfering with launch.</p>
+        <div class="badges">
+          <span class="badge">Version 1.0</span>
+          <span class="badge badge-blue">Disney Infinity: Toy Box</span>
+          <span class="badge badge-green">Free</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick facts -->
+    <div class="card">
+        <h2>Compatibility</h2>
+        <ul class="facts">
+          <li><strong>iOS:</strong> 10.0 - 10.3.4</li>
+          <li><strong>Architectures:</strong> armv7, arm64</li>
+          <li><strong>Depends:</strong> mobilesubstrate</li>
+          <li><strong>Affects:</strong> com.disney.DisneyInfinity</li>
+        </ul>
+    </div>
+
+    <!-- Details -->
+    <section class="card">
+      <h2>Details</h2>
+      <p>
+        Disney Infinity 1.0 on iOS crashes/stalls on iOS 10 because it attempts to call analytics code which no longer
+        functions correctly at runtime. Infinity Unstick NOPs out the implementation for this which restores the same
+        behavior as iOS 6-9.
+      </p>
+    </section>
+
+    <!-- Changelog -->
+    <section class="card">
+      <h2>Changelog</h2>
+      <ul class="changelog">
+        <li>
+          <div class="chg-row">
+            <span class="ver">1.0</span>
+            <span class="date">2025-08-27</span>
+          </div>
+          <ul>
+            <li>Initial release.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>Made with ❤ for the iOS and game preservation community</p>
+    </footer>
+  </main>
+</body>
+</html>
